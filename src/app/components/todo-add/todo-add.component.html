@@ -1,0 +1,8 @@
+<div class="p-4 max-w-lg mx-auto">
+    <h2 class="text-xl font-bold mb-4">Add New Todo</h2>
+    <form (ngSubmit)="addTodo()" class="flex flex-col">
+        <input [(ngModel)]="newTodo.title" name="title" placeholder="Title" class="border border-gray-300 rounded px-4 py-2 mb-2"/>
+        <textarea [(ngModel)]="newTodo.description" name="description" placeholder="Description" class="border border-gray-300 rounded px-4 py-2 mb-2"></textarea>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Todo</button>
+    </form>
+</div>
